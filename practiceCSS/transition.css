@@ -1,0 +1,28 @@
+.div1{
+    width: 100px;
+    height:100px;
+    background-color: red;
+    border: solid blue;
+    transition: width 1.5s cubic-bezire();
+}
+
+.div1:hover {
+    width: 200px;
+}
+
+.div2{
+    width: 100px;
+    height:100px;
+    background-color: green;
+    border: 2px solid black;
+    margin-top: 20px;
+
+}
+
+.div3 {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border: 2px solid red;
+    margin-top:20px ;
+}

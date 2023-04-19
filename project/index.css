@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+
+.main-container{
+    background-image: url(./../images/background.png);
+    height: 100vh;
+    width: 100vw;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 12vh;
+    padding-top: 40px;;
+}
+
+.logo-image{
+    width: 70px;
+
+}
+
+.navlinks {
+    width:45%;
+    display:flex;
+
+}
+
+.links {
+    /* padding-top: ; */
+    width: 70%;
+    display: flex;
+    list-style: none;
+    justify-content:  space-between;
+    padding-top: 10px;
+    font-size: 1.6vw;
+    
+}
+.indivisual-link{
+    /* font-size: 1.5vw; */
+    text-decoration: none;
+
+}
+
+.menu-image {
+    width: 50px;
+    height: 50px;
+    margin-left: 100px;
+    ;
+}
+
+
+/* row */
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+
+}
+
+
+.article {
+    width:40%;
+}
+
+.image-content{
+    width: 33%;
+    height: 32vh;
+    border-radius: 15px;
+    padding-top:20px;
+    padding-left:10px;
+    /* text-align: center; */
+    transition:  all 0.5s;
+
+    
+}
+
+.image-content:hover {
+    transform:translateY(-10px);
+}
+
+.ic-1{
+    background-image:url(./../images/pic-1.png) ;
+    background-size: cover;
+    margin-bottom: 20px;
+
+}
+
+.ic-2{
+    background-image:url(./../images/pic-2.png) ;
+    background-size: cover;
+    margin-bottom: 20px;
+
+}
+
+.ic-3{
+    background-image:url(./../images/pic-3.png) ;
+    background-size: cover;
+    margin-top: 20px;
+}
+
+.ic-4{
+    background-image:url(./../images/pic-4.png) ;
+    background-size: cover;
+    margin-top: 20px;
+
+}
+
+.image-grid {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+.article {
+    /* text-align: center; */
+    margin:auto
+}
+.article-heading {
+    font-size: 3.5em;
+    /* color: darkslategray; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.article-para {
+    margin-top:50px ;
+    font-size: 1.15em;
+    letter-spacing: 1.15px;
+}
+
+.button {
+    margin-top: 80px;;
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    border: none;
+    border-radius: 25px;
+
+}
+
+@media(max-width:900px) {
+    .main-container{
+        background-image: url(./../images/background.png);
+        /* background-repeat:repeat-y; */
+        height: 100%;
+        width: 100%;
+    }
+    .row {
+        display: block;
+        /* justify-content: space-between; */
+        padding-left: 100px;
+        padding-right: 0px;
+    
+    }
+
+
+    
+    
+    .article {
+        width:100%;
+    }
+    
+    .image-content{
+        width: 45vw;
+        height: 25vh;
+        border-radius: 15px;
+        padding-top:20px;
+        padding-left:10px;
+        /* text-align: center; */
+        transition:  all 0.5s;
+    
+        
+    }
+    
+    .image-content:hover {
+        transform:translateY(-10px);
+    }
+    
+    .ic-1{
+        background-image:url(./../images/pic-1.png) ;
+        background-size: cover;
+        margin-bottom: 20px;
+    
+    }
+    
+    .ic-2{
+        background-image:url(./../images/pic-2.png) ;
+        background-size: cover;
+        margin-bottom: 20px;
+    
+    }
+    
+    .ic-3{
+        background-image:url(./../images/pic-3.png) ;
+        background-size: cover;
+        margin-top: 20px;
+    }
+    
+    .ic-4{
+        background-image:url(./../images/pic-4.png) ;
+        background-size: cover;
+        margin-top: 20px;
+    
+    }
+    
+    .image-grid {
+        display: block;
+        
+        margin:auto;
+        margin-top: 50px;
+        padding-right: 100px;
+
+        
+        
+        /* width: 60%; */
+    }
+    
+    .article {
+        /* text-align: center; */
+        margin:0;
+    }
+    .article-heading {
+        font-size: 3.5em;
+        /* color: darkslategray; */
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .article-para {
+        margin-top:30px ;
+        font-size: 1.15em;
+        letter-spacing: 1.15px;
+    }
+    
+    .button {
+        margin-top: 40px;;
+        width: 200px;
+        height: 50px;
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+        border: none;
+        border-radius: 25px;
+    
+    }
+    
+}

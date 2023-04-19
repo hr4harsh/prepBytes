@@ -1,0 +1,119 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./../images/sky.jpg);
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.road {
+    /* width: 100vw; */
+    height: 35vh;
+    position: relative;
+    top: 4.5px;
+    animation-name: road-animation;
+    animation-duration: 0.2s;
+    animation-iteration-count:infinite ;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-direction:normal ;
+    
+}
+
+
+/* .city-image{
+    width: 110vw;
+    background-image: url(./../images/city.png);
+    background-repeat: repeat-x;
+    position: relative;
+    top: 100px;
+} */
+
+.city {
+
+    height: 35vh;
+    position: relative;
+    top: 9px;
+    animation-name: city-animation;
+    animation-duration: 8s;
+    animation-iteration-count:infinite ;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-direction:normal ;
+}
+
+@keyframes city-animation {
+    from {
+        right:0vw ;
+        /* width:100vw; */
+    }
+    to {
+        right:13vw;
+        /* width:250vw; */
+    }
+}
+
+@keyframes road-animation {
+    from {
+        right:0vw ;
+        /* width:100vw; */
+    }
+    to {
+        right:120vw;
+        /* width:250vw; */
+    }
+}
+
+.car {
+    width: 30vw;
+    height: 25vh;
+    position:relative;
+    top:50vh;
+    left: 35vw;
+}
+
+.wheel1 {
+    width: 5.3vw;
+    height: 5.3vw;
+    position: relative;
+    top:73.2vh;
+    left:56.05vw;
+    animation-name: wheel-rotation;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: inherit;
+    animation-delay: 0s;
+}
+
+
+
+.wheel2{
+    width: 5.5vw;
+    height: 5.5vw;
+    position: relative;
+    top: 83vh;
+    left: 37.5vw;
+    animation-name: wheel-rotation;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: inherit;
+    animation-delay: 0s;
+    
+}
+@keyframes wheel-rotation {
+
+from{
+    transform: rotate(0deg);
+
+}
+to{
+    transform: rotate(360deg);
+}
+}

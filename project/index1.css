@@ -1,0 +1,152 @@
+*{
+    background-color: yellow;
+    margin: 0;
+    padding:0;
+}
+
+
+.heading {
+    /* color: white; */
+    text-align: center;
+}
+
+.main-container {
+    /* height: 80vh; */
+    width: 70vh;
+    margin:auto;
+    padding: auto;
+
+
+
+}
+
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-left: 40px;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(45, 45, 186, 0.769);
+}
+
+.bx1 {
+    background-color: rgba(110, 51, 164, 0.626);
+}
+
+
+.bx2 {
+    background-color: red;
+
+}
+.bx3{
+    background-color: green;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* animations */
+
+.box-1{
+    animation-name: rotate1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+}
+
+@keyframes rotate1 {
+    from {
+        transform: skew(35deg);
+    }
+    to {
+        transform: skew(-35deg);
+    }
+}
+
+.box-2 {
+    animation-name: rotate2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes rotate2 {
+    from {
+        transform: skew(35deg);
+    }
+    to{
+        transform: skew(-35deg);
+    }
+}
+
+.box-3 {
+    animation-name: rotate3;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate3 {
+
+    from {
+        transform: rotate(0deg);
+    }
+    
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.bx-1 {
+    animation-name: r1;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    /* animation-delay: 0ms; */
+    animation-direction: alternate-reverse;
+}
+.bx2 {
+    animation-name: r2;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes r1 {
+    from {
+        transform: rotateX(0deg) ;
+    }
+    to{
+        transform:rotateX(75deg) ;
+    }
+}
+
+
+@keyframes r2 {
+    from {
+        transform: rotateY(0deg) ;
+    }
+    to{
+        transform:rotateY(75deg) ;
+    }
+}
+
+.bx3 {
+    animation-name: r3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes r3 {
+    from {
+        transform: rotate(100deg) ;
+    }
+    to{
+        transform:rotate(0deg) ;
+    }
+}

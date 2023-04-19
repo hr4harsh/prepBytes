@@ -1,0 +1,46 @@
+.animation-heading {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gray;
+    text-align: center;
+    animation-name:heading;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes heading {
+    100% {transform: scale(2.5, 2.5);}
+    
+    
+}
+
+.animation-outer-circle {
+    width: 300px;
+    height: 300px;
+
+    background-color: aquamarine;
+    margin:auto ;
+    margin-top: 20vh;
+    border-radius: 50%;
+    animation-name: circle-animation;
+    animation-duration: 2s;
+    animation-iteration-count:infinite ;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-direction: reverse ;
+}
+
+.animation-outer-circle:hover {
+    animation-play-state: paused;
+}
+ @keyframes circle-animation {
+    80% {transform: rotate(360deg);}
+
+}
+
+.animation-inner-circle {
+    width: 30px;
+    height: 30px ;
+    background-color: red;
+    margin: auto;
+    border-radius: 50%;
+}

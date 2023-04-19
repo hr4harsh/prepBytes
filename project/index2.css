@@ -1,0 +1,97 @@
+* {
+    background-color: yellow;
+}
+
+h1  {
+    text-align: center;
+}
+
+
+
+ol {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+}
+
+li {
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.box {
+    transition-property:width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+
+}
+.box:hover {
+    width: 250px;
+
+}
+
+.bx2 {
+    transition-property:width,height;
+    transition-duration: 2s,3s;
+    
+}
+
+.bx2:hover{
+    width: 250px;
+    height: 250px;
+}
+
+.bx3 {
+    transition-property:width;
+    transition-duration: 2s;
+    transition-timing-function:ease;
+}
+.bx3:hover {
+    width: 250px;
+
+}
+.bx4 {
+    transition-property:width;
+    transition-duration: 2s;
+    transition-timing-function:ease-in;
+}
+.bx4:hover {
+    width: 250px;
+
+}
+.bx5 {
+    transition-property:width;
+    transition-duration: 2s;
+    transition-timing-function:ease-in-out;
+}
+.bx5:hover {
+    width: 250px;
+
+}
+.bx6 {
+    transition-property:width;
+    transition-duration: 2s;
+    transition-timing-function:ease-out;
+}
+.bx6:hover {
+    width: 250px;
+
+}
+.bx7 {
+    transition-property:width;
+    transition-duration: 2s;
+    transition-timing-function:inherit;
+}
+.bx7:hover {
+    width: 250px;
+
+}

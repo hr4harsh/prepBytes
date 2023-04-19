@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Backtracking</h1>
+
+    <p>THis is a Lorem Ipsum Page.</p>
+    <p>Just for practice</p>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    
+    <!-- image -->
+    <center><img src="./prepPractice.png" alt="Sample Image here" ></center>
+
+    <!-- ordered list -->
+
+    <ol>
+        <li>Theme 1 is simple dark</li>
+        <li>Ttheme 2 is streamline with white grey colour</li>
+        <li>Theme 3 is simple yet stylish whose name is Focus.</li>
+        <li>Fourth theme is mid way cut in screenShot</li>
+    </ol>
+
+    <br>
+    <br>
+
+    <!-- simple paragraph -->
+    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
+    <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.But the majority have suffered alteration in some form</p>
+    <a href="contact.html"> PLease share the contacts</a>
+
+    <br>
+    <br>
+
+    <!-- heading and paragraph -->
+    <h2>The Algorithm Code.</h2>
+    <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" </p>
+
+    <!-- code -->
+    <font size="4px"  color="red">
+        <pre>
+            class Solution {
+                public int partitionString(String s) {
+                    HashSet<Character>set=new HashSet<>();
+                    int count=0;
+                    for(char c:s.toCharArray()){
+                            if(set.contains(c)){
+                                set=new HashSet();
+                                count++;
+                            }
+                            set.add(c);
+                    }
+                    if(set.size()!=0)return count+1;
+                    return count;
+                }
+                 
+            }
+        </pre>
+    </font>
+
+     <br>
+     <br>
+
+     <p> <i>Donate:</i>  If you use this site regularly and would like to help keep the site on the Internet, please consider donating a small sum to help pay for the hosting and <b>bandwidth</b>  bill. There is no minimum donation, any sum is appreciated - <font color="red" >click here</font>  to donate using PayPal. Thank you for your support.</p>
+    
+    <br>
+    <br>
+
+    <!-- ordered list inside unordered list -->
+
+    <ul>
+        <li>This is item 1</li>
+        <li> this is item 2</li>
+        <li> This is item 3
+            <ol>
+                <li> Ordered list item no.1 </li>
+                <li> Ordered list item no.2</li>
+            </ol>
+        </li>
+    </ul>
+    
+
+    <h2>Table for Practice.</h2>
+    <p> This is a table just for practice in which i will use cellspacing and cellpadding attributes along with that i will add border and colour. Align all the text to centre</p>
+     <!-- table -->
+    <table border="1px" align="center" cellpadding="10px" cellspacing="5px" width="500px" >
+        <thead bgcolor="#deffde">
+            <th bgcolor="#FFFFFF"></th>
+            <th>2 by 3 map</th>
+            <th>3 by 3 map</th>
+            <th>3 by 4 map</th>
+
+        </thead>
+
+        <tbody align="center">
+            <tr>
+                <td>Method1:</td>
+                <td>60 ms</td>
+                <td>540 ms</td>
+                <td>405050 ms(1minute)</td>
+            </tr>
+            <tr>
+                <td>Method2 :</td>
+                <td>0 ms</td>
+                <td>0 ms</td>
+                <td>0 ms(1minute)</td>
+            </tr>
+        </tbody>
+        <tfoot align="center">
+            <tr>
+                <td>Total</td>
+                <td>1 ms</td>
+                <td>1 ms</td>
+                <td>1 ms</td>
+            </tr>
+        </tfoot>
+    </table>
+
+<p>This is simple yet practical project of HTML which includes all the major tags except the famous div tag, all in all io have cver html overall and touch all the spheres of it.</p>
+<p>Thankyou for reviewing the project</p>
+<br>
+<br>
+
+<!-- <table align="center" border="1" cellpading="6">
+    <tbody>
+        <tr>
+        <td><img src="https://www.shutterstock.com/image-vector/black-clear-ball-260nw-738962776.jpg" alt=""></td>
+        <td><img src="https://www.shutterstock.com/image-vector/black-clear-ball-260nw-738962776.jpg" alt=""></td>
+        <td></td>
+        <td><img src="https://img.freepik.com/premium-vector/white-empty-round-smooth-sphere-with-shadow_1053-1152.jpg" alt=""></td>
+        <td><img src="https://img.freepik.com/premium-vector/white-empty-round-smooth-sphere-with-shadow_1053-1152.jpg" alt=""></td>
+    </tr>
+</tbody>
+
+</table> -->
+
+</body>
+</html>
